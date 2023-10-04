@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { child } from "./Child";
+import { Child } from "./Child";
 
 export default function App() {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
-  const childComponent = show ? child : null;
+  const childComponent = show ? <Child /> : null;
 
   return (
     <div>
